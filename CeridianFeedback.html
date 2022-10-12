@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="../css/FeedbackStyle.css">
+</head>
+
+<head>
+    <!--
+        <img class="topImage">
+    -->
+    <div class="container">
+        <img class="topImage">
+        <!--
+           <img class="imageBackground"> 
+        -->
+        <div class="formBorder">
+            <form class="formContent">
+                <h2 class="formTitle">FEEDBACK FORM</h2>
+
+                <label for="name" class="label">Enter your name:</label>
+                <input type="text" id="name" name="name" class="space input">
+
+                <label for="email" class="label">Enter your email:</label>
+                <input type="email" id="email" name="email" class="space input">
+
+                <label for="department" class="label">Choose your department:</label>
+                <select name="department" id="department" class="space input dept">
+                    <option disabled selected value>-- select an option --</option>
+                    <option>Product and Technology</option>
+                    <option>Customer Support</option>
+                    <option>Human Resource</option>
+                    <option>Other</option>
+                </select>
+
+                <label class="label">Select a rating of your experience at Ceridian so far:</label>
+                <div class="space radioContainers">
+                    <label for="one" class="label"><input type="radio" id="one" name="rating">1</label>
+                    <label for="two" class="label"><input type="radio" id="two" name="rating">2</label>
+                    <label for="three" class="label"><input type="radio" id="three" name="rating">3</label>
+                    <label for="four" class="label"><input type="radio" id="four" name="rating">4</label>
+                    <label for="five" class="label"><input type="radio" id="rating" name="rating">5</label>
+                </div>
+                
+                <label class="label">Select suggestions to improve experience for incoming batches; you may select from below:</label>
+                <div class="checkboxOptions space">
+                    <label for="moreLabs" class="label"><input type="checkbox" id="moreLabs" name="suggestions">More Labs/Assignments</label>
+                    <label for="moreSelfLearning" class="label"><input type="checkbox" id="moreSelfLearning" name="suggestions">More self learning sessions</label>
+                    <label for="moreFood" class="label"><input type="checkbox" id="moreFood" name="suggestions">More food (especially pizza)</label>
+                    <label for="moreComplex" class="label"><input type="checkbox" id="moreComplex" name="suggestions">More complex training sessions</label>
+                    <label for="lessComplex" class="label"><input type="checkbox" id="lessComplex" name="suggestions">Less complex training sessions</label>
+                </div>
+
+                <label for="comments" class="label">Add any comments or suggestions:</label>
+                <textarea id="comments" name="comments" class="textArea space" rows="4" maxlength="300"></textarea>
+
+                <div class="submitContainer">
+                    <input type="submit" value="Submit Feedback" class="submitForm">
+                </div>
+            </form>
+        </div>
+    </div>
+</head>
